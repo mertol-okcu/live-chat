@@ -1,8 +1,8 @@
 <template>
   <nav>
-    <div>
-      <p>Hey there... display name here</p>
-      <p class="email">Currently logged in as... email</p>
+    <div v-if="user">
+      <p>Hey there {{ user.displayName }}</p>
+      <p class="email">Currently logged in as {{ user.email }}</p>
     </div>
     <button @click="handleClick">Log out</button>
   </nav>
@@ -11,10 +11,12 @@
 <script>
 import { useRouter } from "vue-router";
 import useLogout from "../composables/useLogout.js";
+import getUser from "../composables/getUser.js";
 
 export default {
   setup() {
     const { logout, error } = useLogout();
+    const { user } = getUser();
 
     const router = useRouter();
 
@@ -25,7 +27,7 @@ export default {
       }
     };
 
-    return { handleClick };
+    return { handleClick, user };
   },
 };
 </script>
