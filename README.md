@@ -1,4 +1,7 @@
 # live-chat
+```
+This project made by following Vue3 tutorial series created by Shaun Pelling.
+```
 
 ## Project setup
 ```
