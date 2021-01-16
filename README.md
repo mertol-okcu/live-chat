@@ -2,7 +2,7 @@
 
 This project was done following the Vue 3 tutorial series created by Shaun Pelling.
 
-[Go to website](https://udemy-vue-firebase-sites-98eed.web.app/chatroom)
+[**Go to website**](https://udemy-vue-firebase-sites-98eed.web.app/chatroom)
 
 ## Project setup
 
