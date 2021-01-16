@@ -25,7 +25,7 @@ const signup = async (email, password, displayName) => {
 };
 
 const useSignup = () => {
-  return { error, signup };
+  return { signup, error };
 };
 
 export default useSignup;
